@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()"><a href="#" style="color: black; font-size: 25px;">X</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li class="hideOnMobile">
+        <li class="hideOnMobile"><a href="#">Contact</a></li class="hideOnMobile">
+        <li class="hideOnMobile"><a href="#">Services</a></li class="hideOnMobile">
+        <li class="hideOnMobile"><a href="#">Login</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"><img src="menu-2.png" alt="" /></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="items">
+        Nike
+        Addidas    
+        Puma    
+        Lacoste    
+        LV    
+        Prada    
+        Gucci    
+        Amiri    
+        Vans    
+        Converse    
+        Naked Wolfe
+          
+    </div>
+    <div class="grid">
+      <img src="unsplash__C5zsV_p-YI.png" alt="" width="345">
+      <img src="unsplash__KaMTEmJnxY.png" alt="" width="345">
+      <img src="unsplash_BV8Ka-JE0Cs.png" alt="" width="345">
+      <img src="unsplash_dnL6ZIpht2s.png" alt="" width="345">
+      <img src="unsplash_QRKJwE6yfJo.png" alt="" width="345">
+      <img src="unsplash_rhUU1pemhQ0.png" alt="" width="345">
+      <img src="unsplash_TLD6iCOlyb0.png" alt="" width="345">
+      <img src="unsplash_vbAEHCrvXZ0.png" alt="" width="345">
+      <img src="unsplash_XeYx043QD5U.png" alt="" width="345">
+      <img src="unsplash_Xh6BpT-1tXo.png" alt="" width="345">
+      <img src="unsplash_z9vkyDW9brw.png" alt="" width="345">
+      <img src="user4.png" alt="" width="345">
+    </div>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
